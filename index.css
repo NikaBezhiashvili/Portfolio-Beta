@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #000000;
+    background-image: linear-gradient(270deg, #000000 0%, #434343 74%);
+    z-index: 1;
+}
+
+
+#begin{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1000;
+    animation: welcome 2s forwards;
+}
+
+@keyframes welcome {
+    0%{
+
+    }
+    100%{
+        height: 0%;
+        display: none;
+    }
+    
+}
+
+@keyframes fill{
+    0%{
+
+    }
+    100%{
+        color: #fff;
+        background: transparent;
+    }
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+}
+header span
+{
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 2vw;
+    color: white;
+
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-right: 2vw;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+header ul li a svg{
+    display: flex;
+    justify-content: center;
+}
+
+
+.first_page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+@keyframes test{
+    0%{
+        content : 'Test'
+    }
+    50%{
+        content : 'Solving Problems <br>With Some Clicks'
+    }
+    100%{
+        content : 'Done'
+    }
+}
+.first_page p{
+    position: absolute;
+    font-size: 5em;
+    font-weight: 700;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.first_page a{
+    position: absolute;
+    border: solid white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 40px;
+    background: white;
+    color: #2b1055;
+    font-size: 1.5em;
+    transform: translateY(150px);
+    z-index: 5;
+}
+
+.first_page a:hover{
+    animation: fill 2s forwards;
+}
+
+.sec{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    pointer-events: none;
+    display: flex;   
+}
+
+.sec img{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+}
+
