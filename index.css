@@ -102,6 +102,12 @@ header ul li a svg{
     flex-direction: column;
 }
 
+.first_page img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    
+}
 @keyframes test{
     0%{
         content : 'Test'
